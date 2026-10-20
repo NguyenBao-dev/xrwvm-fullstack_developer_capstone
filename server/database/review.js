@@ -1,27 +1,16 @@
-<<<<<<< HEAD
-=======
 /*jshint esversion: 8 */
->>>>>>> master
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
 const reviews = new Schema({
-<<<<<<< HEAD
-	id: {
-    type: Number,
-    required: true,
-	},
-	name: {
-=======
   id: {
     type: Number,
     required: true,
   },
   name: {
->>>>>>> master
     type: String,
-    required: true
+    required: true,
   },
   dealership: {
     type: Number,
@@ -29,28 +18,28 @@ const reviews = new Schema({
   },
   review: {
     type: String,
-    required: true
+    required: true,
   },
   purchase: {
     type: Boolean,
-    required: true
+    required: true,
   },
   purchase_date: {
     type: String,
-    required: true
+    required: true,
   },
   car_make: {
     type: String,
-    required: true
+    required: true,
   },
   car_model: {
     type: String,
-    required: true
+    required: true,
   },
   car_year: {
     type: Number,
-    required: true
+    required: true,
   },
 });
 
-module.exports = mongoose.model('reviews', reviews);
+module.exports = mongoose.model("reviews", reviews);
