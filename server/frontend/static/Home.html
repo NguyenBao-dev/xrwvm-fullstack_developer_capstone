@@ -2,14 +2,6 @@
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<<<<<<< HEAD
-  <link rel="stylesheet" href="static/style.css">
-  <link rel="stylesheet" href="static/bootstrap.min.css">
-<script>
-
-const logout = async (e) => {
-//Include the code for logout here.
-=======
   <link rel="stylesheet" href="/static/style.css">
   <link rel="stylesheet" href="/static/bootstrap.min.css">
 <script>
@@ -32,26 +24,17 @@ const logout = async (e) => {
   else {
     alert("The user could not be logged out.");
   }
->>>>>>> master
 };
 
 let checkSession = ()=>{
   let curr_user = sessionStorage.getItem("username");
 
   if (curr_user && curr_user !== "") {
-<<<<<<< HEAD
-    document.getElementById("loginlogout").innerHTML = 
-    '<span class="homepage_links">' + curr_user +'</span>' +
-    '<a class="homepage_links" onclick="logout()" href="/">Logout</a>'
-  } else {
-    document.getElementById("loginlogout").innerHTML = 
-=======
     document.getElementById("loginlogout").innerHTML =
     '<span class="homepage_links">' + curr_user +'</span>' +
     '<a class="homepage_links" onclick="logout(event)" href="/">Logout</a>'
   } else {
     document.getElementById("loginlogout").innerHTML =
->>>>>>> master
     '<a class="homepage_links" href="/login">Login</a>'+
     '<a class="homepage_links"  href="/register">Register</a>'
   }
@@ -86,11 +69,7 @@ let checkSession = ()=>{
 </nav>
 <div style="display: flex;flex-direction: column;">
 <div class="card" style="width: 50%;margin-top: 50px;align-self: center;">
-<<<<<<< HEAD
-  <img src="static/car_dealership.jpg" class="card-img-top" alt="...">
-=======
   <img src="/static/car_dealership.jpg" class="card-img-top" alt="Best Cars showroom">
->>>>>>> master
   <div class="banner">
     <h5>Welcome to our Dealerships!</h5>
     <a href="/dealers" class="btn" style="background-color: aqua;margin:10px">View Dealerships</a>
