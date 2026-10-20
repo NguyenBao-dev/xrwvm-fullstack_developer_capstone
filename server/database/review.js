@@ -1,13 +1,25 @@
+<<<<<<< HEAD
+=======
+/*jshint esversion: 8 */
+>>>>>>> master
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
 const reviews = new Schema({
+<<<<<<< HEAD
 	id: {
     type: Number,
     required: true,
 	},
 	name: {
+=======
+  id: {
+    type: Number,
+    required: true,
+  },
+  name: {
+>>>>>>> master
     type: String,
     required: true
   },

@@ -1,13 +1,25 @@
+<<<<<<< HEAD
+=======
+/*jshint esversion: 8 */
+>>>>>>> master
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
 const dealerships = new Schema({
+<<<<<<< HEAD
 	id: {
     type: Number,
     required: true,
 	},
 	city: {
+=======
+  id: {
+    type: Number,
+    required: true,
+  },
+  city: {
+>>>>>>> master
     type: String,
     required: true
   },
