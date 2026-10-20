@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-def initiate():
-    print("Populate not implemented. Add data manually")
-=======
 from .models import CarMake, CarModel
 
 CAR_MAKES = [
@@ -44,4 +40,3 @@ def initiate():
             car_make=makes[make_index],
             type=car_type,
             year=2023)
->>>>>>> master

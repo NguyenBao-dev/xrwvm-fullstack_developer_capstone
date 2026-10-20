@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-# Uncomment the imports below before you add the function code
-# import requests
-import os
-=======
 import os
 from urllib.parse import quote
 
 import requests
->>>>>>> master
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -18,17 +12,6 @@ sentiment_analyzer_url = os.getenv(
     'sentiment_analyzer_url',
     default="http://localhost:5050/")
 
-<<<<<<< HEAD
-# def get_request(endpoint, **kwargs):
-# Add code for get requests to back end
-
-# def analyze_review_sentiments(text):
-# request_url = sentiment_analyzer_url+"analyze/"+text
-# Add code for retrieving sentiments
-
-# def post_review(data_dict):
-# Add code for posting review
-=======
 
 def get_request(endpoint, **kwargs):
     """GET from the Express/Mongo backend and return the parsed JSON."""
@@ -63,4 +46,3 @@ def post_review(data_dict):
     response.raise_for_status()
     print(response.json())
     return response.json()
->>>>>>> master
